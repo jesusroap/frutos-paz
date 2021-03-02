@@ -12880,8 +12880,6 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
     }
 
     .hidden-md-up.text-sm-center.mobile {
-        border-bottom: 1px solid #e0e0e0;
-        margin-bottom: 20px;
         display: flex;
         align-items: center
     }
@@ -12943,15 +12941,18 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
         background: #f1f1f1
     }
     #header .header-nav {
-        background: #fff;
-        color: #414141
+        background: #b44920;
+        color: #414141;
+        min-height: 82px;
+        margin-bottom: 1.5rem
     }
     #header .header-nav .top-logo {
         padding-top: 11px
     }
-    #header .header-nav .top-logo a img {
+    #header .header-nav .top-logo img {
         max-height: 50px;
-        max-width: 100%
+        max-width: 100%;
+        filter: brightness(5)
     }
     #header .header-nav .right-nav {
         -webkit-box-orient: vertical;
@@ -13001,12 +13002,6 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
     }
     #footer {
         padding-top: .5rem
-    }
-}
-
-@media (min-width: 590px) {
-    #header .header-nav .container {
-        padding: 0
     }
 }
 
