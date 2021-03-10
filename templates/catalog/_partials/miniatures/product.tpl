@@ -78,6 +78,10 @@
           {/block}
         </div>
       </div>
+
+      {block name='product_reviews'}
+        {hook h='displayProductListReviews' product=$product}
+      {/block}
     </div>
     <div class="product-description">
         {block name='product_name'}
@@ -115,10 +119,6 @@
               {hook h='displayProductPriceBlock' product=$product type='weight'}
             </div>
           {/if}
-        {/block}
-
-        {block name='product_reviews'}
-          {hook h='displayProductListReviews' product=$product}
         {/block}
       </div>
   </article>

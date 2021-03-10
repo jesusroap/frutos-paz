@@ -2,3 +2,12 @@
  * Custom code goes here.
  * A template should always ship with an empty custom.css
  */
+
+/****** Custom List Product Reviews ********/
+.product-list-reviews {
+    bottom: 0;
+    top: revert
+}
+.products .has-reviews .product-hover {
+    bottom: 43px
+}
