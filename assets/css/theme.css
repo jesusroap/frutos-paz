@@ -5750,14 +5750,7 @@ button.close {
 .modal-dialog {
     position: relative;
     width: auto;
-    margin: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    min-height: calc(100% - 60px);
+    margin: 100px 10px 10px 10px;
 }
 
 .modal-content {
@@ -5835,7 +5828,7 @@ button.close {
 @media (min-width:576px) {
     .modal-dialog {
         max-width: 600px;
-        margin: 30px auto
+        margin: 100px auto
     }
     .modal-sm {
         max-width: 300px
