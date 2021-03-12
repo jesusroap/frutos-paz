@@ -3,11 +3,59 @@
  * A template should always ship with an empty custom.css
  */
 
+
 /****** Custom List Product Reviews ********/
 .product-list-reviews {
     bottom: 0;
-    top: revert
+    top: revert;
 }
 .products .has-reviews .product-hover {
     bottom: 43px
+}
+
+
+/******* Ocultar numero de comentarios en vista miniatura de productos ******/
+.comments-nb {
+    display: none
+}
+
+
+/********** Modificacion Responsive de Miniaturas de los productos *********/
+@media (min-width: 991px) {
+    .cart-products-count-mobile {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .products .item-list-element {
+        width: 50%;
+        padding: 0 7px
+    }
+}
+
+
+/******* Estrellas en vista miniatura de productos ******/
+.small-stars .star-content div.star,
+.small-stars .star-content div.star-on,
+.small-stars .star-content div.star-hover {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAALCAYAAABLcGxfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QzJEMDk3M0JGQTFCMTFFODk1QTBENDhCNkYyRjFBOUIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QzJEMDk3M0FGQTFCMTFFODk1QTBENDhCNkYyRjFBOUIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjdBRThEQzUxRkExQjExRThCODY4QkIwRkM3OTdDMzMxIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjdBRThEQzUyRkExQjExRThCODY4QkIwRkM3OTdDMzMxIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+5Sx/5AAAAKVJREFUeNpiYEAD////Z7h27Vo5EM8EsdExI7oGoEJBIHUXyjXR1NS8hyzPxIAJ0oBYEIrL0SUZgSYaA2kXIFaCYmOoYhB4D8QgG85C6T0sSCYJYrFNEGqAMZRfwaSlpbUHyAiDmoYPVAD90wn2A1RTOiHF6J4+i0fDPWyh5IJHgxI2DYJINoGc5woKFXQNLEgaQJ5OB7p1FpLYnuvXr7sgawAIMAC3Uzj1er3FGQAAAABJRU5ErkJggg==) no-repeat scroll 0 1px;
+    width: 12px;
+    height: 12px
+}
+.small-stars .star-content div.star-on,
+.small-stars .star-content div.star-hover {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Q0U1RjIyOTU4NUUwMTFFOTg4OTI4NDVGMUI1Nzc5MDciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6Q0U1RjIyOTY4NUUwMTFFOTg4OTI4NDVGMUI1Nzc5MDciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDRTVGMjI5Mzg1RTAxMUU5ODg5Mjg0NUYxQjU3NzkwNyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDRTVGMjI5NDg1RTAxMUU5ODg5Mjg0NUYxQjU3NzkwNyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PlFX660AAACXSURBVHjaYvx/gY0BCxAE4vfYJJhwKD4DxErEakiDKi7HpoERzUkg0+8iOckEiO8hK2BBMhGkyAVKwzTvBuKzUM0gehYLVFEoA3aghOQXkE17QH4IA+LVDPgBSLEriIZ5GqRpDyHF6KF0D4eG98hyyBpccGgQxBYPgkhBOQsanBVQPrLHwcEKA7OgGGb9WSg/DTmZAAQYABxVIoa348RTAAAAAElFTkSuQmCC) no-repeat scroll 0 0 transparent!important;
+}
+.product-list-reviews .grade-stars .star-content {
+  top: 3px;
+}
+.grade-stars.small-stars {
+  min-width: 70px;
+}
+.star-content {
+  margin: 0
+}
+
+.carousel .direction {
+  display: none
 }

@@ -30,7 +30,8 @@
         <div class="cart-custom-details">
           <span class="hidden-sm-down shop">{l s='Cart' d='Shop.Theme.Checkout'}</span>
           <span class="hidden-sm-down">{l s='Item' d='Shop.Theme.Checkout'}</span>
-          <span class="cart-products-count">({$cart.products_count})</span>
+          <span class="cart-products-count cart-products-count-desktop">({$cart.products_count})</span>
+          <span class="cart-products-count cart-products-count-mobile">{$cart.products_count}</span>
           <span class="cart-products-totals">- ({$cart.totals.total.value})</span>
         </div>
       </a>

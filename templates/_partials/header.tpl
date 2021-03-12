@@ -31,7 +31,6 @@
 {block name='header_nav'}
   <nav class="header-nav">
     <div class="container">
-      <div class="row">
         <div class="hidden-sm-down">
           <div class="col-md-5 col-xs-12 left-nav">
             {hook h='displayNav1'}
@@ -51,7 +50,6 @@
           </div>
           <div class="clearfix"></div>
         </div>
-      </div>
     </div>
   </nav>
 {/block}
